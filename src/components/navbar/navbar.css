@@ -1,0 +1,137 @@
+.education__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 6rem
+}
+
+.education__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.education__navbar-links_logo {
+    margin-right: 2rem;
+}
+
+.education__navbar-links_logo img {
+    width: auto;
+    height: 30px;
+}
+
+.education__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.education__navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.education__navbar-links_container p,
+.education__navbar-sign p,
+.education__navbar-menu_container p {
+    color: #c2c2c2;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.education__navbar-sign button,
+.education__navbar-menu_container button {
+    padding: 1rem 2rem;
+    color: #fff;
+    left: 1153px;
+    top: 55px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    background: #7468e8;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.education__navbar-menu {
+    margin-left: 1rem;
+
+    display: none;
+    position: relative;
+}
+
+.education__navbar-menu svg {
+    cursor: pointer;
+}
+
+.education__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    text-align: end;
+    background: #ffffff;
+    border: 1px solid #c2c2c2;
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-height: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0,0,0,0.2);
+}
+
+.education__navbar-menu_container p {
+    margin: 1rem 0;
+}
+
+.education__navbar-menu_container-links-sign {
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .education__navbar-links_container {
+        display: none;
+    }
+
+    .education__navbar-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .education__navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .education__navbar {
+        padding: 2rem;
+    }
+
+    .education__navbar-sign {
+        display: none;
+    }
+
+    .education__navbar-menu_container {
+        top: 20px;
+    }
+
+    .education__navbar-menu_container-links-sign {
+        display: block;
+    }
+}
