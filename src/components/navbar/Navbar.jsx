@@ -8,10 +8,9 @@ import logo from '../../assets/Udemy_logo.svg.png'
 const Menu = () => (
   <>
   <p><a href='#home'>Home</a></p>
-  <p><a href='#weducation'>Service</a></p>
-  <p><a href='#possibility'>Courses</a></p>
-  <p><a href='#features'>Blog</a></p>
-  <p><a href='#blog'>Contact</a></p>
+  <p><a href='#blog'>Courses</a></p>
+  <p><a href='#features'>Testimonies</a></p>
+  <p><a href='#footer'>Contact</a></p>
   </>
 )
 
@@ -52,6 +51,5 @@ function Navbar() {
 }
 
 export default Navbar
-
 
 
